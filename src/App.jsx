@@ -49,7 +49,8 @@ function App() {
 
          <Route path="/book" element={!token?<Login/>:<Books/>}/> 
          <Route path="/shop" element={!token?<Login/>:<Shop/>}/> 
-         <Route path="/contact" element={!token?<Login/>:<ContactUs/>}/> 
+         <Route path="/contact" element={<ContactUs/>}/> 
+         {/* <Route path="/contact" element={!token?<Login/>:<ContactUs/>}/>  */}
          <Route path="/signin" element={<Signin/>}/> 
          <Route path="/login" element={<Login/>}/>
          <Route path="/bookdis" element={<BooksDiscription/>}/>
