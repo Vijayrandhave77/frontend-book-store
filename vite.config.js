@@ -10,3 +10,7 @@ export default defineConfig({
   },
   plugins: [react()],
 })
+
+
+// https://backend-book-store-3xxx.onrender.com
+// http://localhost:4000

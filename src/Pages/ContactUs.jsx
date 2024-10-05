@@ -48,11 +48,11 @@ function ContactUs() {
     if(namevalidation()){
       if(userEmailvalidation()){
         if(subjectvalidation()){
-          axios.post('https://dummyjson.com/posts/add',{
-            username: userName.current.value,
-            email: userEmail.current.value,
-            subject: userSubject.current.value,
-            message: userText.current.value
+          axios.post('api/user/contact',{
+            userName: userName.current.value,
+            userEmail: userEmail.current.value,
+            userSubject: userSubject.current.value,
+            userText: userText.current.value
           })
           .then((response)=>{
             console.log(response.data);
