@@ -9,7 +9,7 @@ function CartPage() {
   const update = useSelector((state) => state.BsellItem.update);
 
   const dispatch = useDispatch();
-  let [localData, setLocalData] = useState([]);
+  let [localData, setLocalData] = useState(AddTobagData);
   useEffect(() => {
     let data = localStorage.getItem("addToCart");
     const finalLocalData = JSON.parse(data);

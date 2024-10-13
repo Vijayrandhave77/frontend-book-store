@@ -48,7 +48,7 @@ function ContactUs() {
     if(namevalidation()){
       if(userEmailvalidation()){
         if(subjectvalidation()){
-          axios.post('api/user/contact',{
+          axios.post('https://backend-book-store-3xxx.onrender.com/user/contact',{
             userName: userName.current.value,
             userEmail: userEmail.current.value,
             userSubject: userSubject.current.value,

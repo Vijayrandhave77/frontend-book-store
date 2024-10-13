@@ -7,7 +7,7 @@ function NewRelease() {
 
   useEffect(() => {
     axios
-      .get("api/user/BestsellingBooks")
+      .get("https://backend-book-store-3xxx.onrender.com/user/BestsellingBooks")
       .then((response) => {
         setdata(response.data);
       })

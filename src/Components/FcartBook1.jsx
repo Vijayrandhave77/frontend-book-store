@@ -8,7 +8,7 @@ function FcartBook1() {
 
   useEffect(() => {
     axios
-      .get("api/user/SellBooks")
+      .get("https://backend-book-store-3xxx.onrender.com/user/SellBooks")
       .then((response) => {
         setdata(response.data);
       })

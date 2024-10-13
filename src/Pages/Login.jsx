@@ -50,7 +50,7 @@ function Login() {
     e.preventDefault();
       if(userEmailvalidation()){
         if(passwordvalidation()){
-          axios.post('api/user/login',{
+          axios.post('https://backend-book-store-3xxx.onrender.com/user/login',{
             userEmail:userEmail.current.value,
             userPwd:userPwd.current.value,
           })

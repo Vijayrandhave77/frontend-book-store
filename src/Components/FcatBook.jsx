@@ -7,7 +7,7 @@ import {fc1} from '../Store/BsellingSlice'
 function FcatBook() {
   const [data,setdata] = useState([])
   useEffect(()=>{
-    axios.get('api/user/FeatureBooks')
+    axios.get('https://backend-book-store-3xxx.onrender.com/user/FeatureBooks')
     .then(response=>{
       setdata(response.data);
     })
