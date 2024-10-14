@@ -9,7 +9,7 @@ function FcatBook2() {
   const [data,setdata] = useState([])
 
   useEffect(()=>{
-    axios.get('https://backend-book-store-3xxx.onrender.com/user/MostBooks')
+    axios.get('api/user/MostBooks')
     .then(response=>{
       setdata(response.data);
     })

@@ -17,7 +17,7 @@ function BsellingBook() {
     const cheader = Cookies.get('jwtToken')
     console.log(cheader);
     
-    axios.get('https://backend-book-store-3xxx.onrender.com/user/BestsellingBooks',{
+    axios.get('api/user/BestsellingBooks',{
       headers: {
         "Authorization": `Bearer ${cheader}`
       }
